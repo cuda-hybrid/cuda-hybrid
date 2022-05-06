@@ -12,26 +12,26 @@ The two agents will interact with each other, and their final values for Rebelli
 
 By default, the simulation will run 100 times.
 
-In a python file, import the :mod:`cuda-hybrid<cuda-hybrid>` module:
+In a python file, import the :mod:`cuda_hybrid<cuda_hybrid>` module:
 
 ..  code-block:: python
 
     import cuda-hybrid as md
 
-Next, create a model using :func:`generate_model<cuda-hybrid.generate_model>`:
+Next, create a model using :func:`generate_model<cuda_hybrid.generate_model>`:
 
 ..  code-block:: python
 
     hm = md.generate_model(2, "newman", "insurgency_simple.txt")
 
-The text file can be found here: :download:`insurgency_simple.txt<../../../insurgency_simple.txt>`
+The text file can be found here: :download:`insurgency_simple.txt<../text/insurgency_simple.txt>`
 
 Now create a function that simulates the interactions between the agents:
 
 ..  note::
 
     The interactions can be broken up into different methods, but these methods need to be wrapped
-    into one function only in order to be passed to the :meth:`run_serial<cuda-hybrid.HybridModel.run_serial>` method.
+    into one function only in order to be passed to the :meth:`run_serial<cuda_hybrid.HybridModel.run_serial>` method.
 
 The two rules for agent interactions for this model are:
 

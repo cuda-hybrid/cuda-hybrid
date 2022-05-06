@@ -1,0 +1,2 @@
+EconomicDevelopment	Rebelliousness	-0.3
+AbilityOfInsurgentsToControlThePopulation	Rebelliousness	0.3

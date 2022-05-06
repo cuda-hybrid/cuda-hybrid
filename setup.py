@@ -4,14 +4,15 @@ with open("README.rst", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="cuda-hybrid-CUDA-HYBRID",
-    version="0.1.5",
+    name="cuda-hybrid",
+    version="0.1.7",
     description="Run ABM/FCM models on CUDA cores",
     long_description=long_description,
     long_description_content_type="text/x-rst",
     url="https://github.com/cuda-hybrid/cuda-hybrid",
     project_urls={
         "Bug Tracker": "https://github.com/cuda-hybrid/cuda-hybrid/issues",
+        'Documentation': 'https://cuda-hybrid.github.io/'
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -26,5 +27,5 @@ setuptools.setup(
                     "networkx >= 2.6.3",
                     "nptyping >= 1.4.4",
                     "numba >= 0.48.0",
-                    "numpy >= 1.21.5"],
+                    "numpy >= 1.21.5"]
 )

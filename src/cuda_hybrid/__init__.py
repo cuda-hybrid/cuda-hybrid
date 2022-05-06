@@ -1,0 +1,1 @@
+from model import HybridModel, generate_model

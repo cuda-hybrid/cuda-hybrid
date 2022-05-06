@@ -1,1 +1,1 @@
-cuda-hybrid
+cuda_hybrid

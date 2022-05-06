@@ -1,5 +1,5 @@
-Documentation
+API Documentation
 =================
 
-..  automodule:: cuda-hybrid
+..  automodule:: model
     :members:

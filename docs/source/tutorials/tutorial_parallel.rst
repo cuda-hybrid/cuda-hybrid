@@ -13,9 +13,9 @@ In a python file, import the module:
 
 ..  code-block:: python
 
-    import cuda-hybrid as ch
+    import cuda_hybrid as ch
 
-The model can be built using :func:`generate_model<cuda-hybrid.generate_model>`:
+The model can be built using :func:`generate_model<cuda_hybrid.generate_model>`:
 
 ..  code-block:: python
 
@@ -75,7 +75,7 @@ in parallel. These functions are exactly the same as the ones in :ref:`Serial`
                     insurgeList
             )
 
-The ``insurgency_interact`` can then be passed to :meth:`run_parallel<cuda-hybrid.HybridModel.run_parallel>`, along with other arguments, which includes the hybridmodel object,
+The ``insurgency_interact`` can then be passed to :meth:`run_parallel<cuda_hybrid.HybridModel.run_parallel>`, along with other arguments, which includes the hybridmodel object,
 a list of focus nodes, a list of thresholds for the focus nodes, the maximum number of iterations for the FCMs, and, optionally, 
 number of steps.
 
@@ -83,7 +83,7 @@ number of steps.
 
     print(hm.run_parallel(["Rebelliousness"], [0.05], 10, insurgency_interact, [hm], 100)])
 
-The function :func:`run_parallel<cuda-hybrid.HybridModel.run_parallel>` will return an average values across all agents
+The function :func:`run_parallel<cuda_hybrid.HybridModel.run_parallel>` will return an average values across all agents
 for all the focus nodes. The results of the above simulation is shown below:
 
 .. code-block:: console

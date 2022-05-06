@@ -23,7 +23,7 @@ The first five rows of the file:
 ..  csv-table::
     :file: obesity_serial_sample.csv
 
-The complete dataset can be found here: :download:`obesity_serial.csv<../../../obesity_serial.csv>`
+The complete dataset can be found here: :download:`obesity_serial.csv<../text/obesity_serial.csv>`
 
 The file can be loaded to a panda dataframe using ``pandas.pd.read_csv()``:
 
@@ -50,7 +50,7 @@ code is shown below:
 
 The result graph is displayed below:
 
-..  image:: ../../../svg/serial_times.svg
+..  image:: ../img/serial_times.svg
 
 
 Comparing runtimes
@@ -65,7 +65,7 @@ The data are then organized into a csv file. The first five rows are displayed b
 ..  csv-table::
     :file: parallel_times_sample.csv
 
-The complete csv file can be found here: :download:`obesity_parallel_gpu.csv<../../../parallel_times.csv>`
+The complete csv file can be found here: :download:`parallel_times.csv<../text/parallel_times.csv>`
 
 In order to use the above file for graphing, a pandas dataframe should be created and then ``seaborn`` and ``matplotlib``
 to graph it. Parameter ``hue`` can be set as ``Type`` to group the data. Parameter
@@ -76,14 +76,14 @@ to graph it. Parameter ``hue`` can be set as ``Type`` to group the data. Paramet
     import pandas as pd
     import matplotlib.pyplot as plt
 
-    runs = pd.read_csv("obesity_parallel_gpu.csv")
+    runs = pd.read_csv("parallel_times.csv")
     sns.set_style("darkgrid")
-    sns.lineplot(data=runs, x="Number of Agents", y="Time (minutes)", hue="Type")
+    sns.lineplot(data=runs, x="Agents", y="Time(minutes)", hue="Type", err_style="bars")
     plt.show()
 
 The resulted graph is displayed below:
 
-..  image:: ../../../svg/parallel_times.svg
+..  image:: ../img/parallel_times.svg
     
 There are different ways to organize the dataset to help with data Visualization. More details can be found on seaborn
 package page

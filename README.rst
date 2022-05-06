@@ -12,3 +12,8 @@ Installation
 ..  code-block:: python
 
     $ pip install cuda-hybrid
+
+Usage
+-----
+
+Check out `Documentation <https://cuda-hybrid.github.io/>`_

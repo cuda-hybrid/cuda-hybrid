@@ -1,0 +1,11 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/cuda-hybrid/__init__.py
+src/cuda-hybrid/cuda-hybrid.py
+src/cuda_hybrid.egg-info/PKG-INFO
+src/cuda_hybrid.egg-info/SOURCES.txt
+src/cuda_hybrid.egg-info/dependency_links.txt
+src/cuda_hybrid.egg-info/requires.txt
+src/cuda_hybrid.egg-info/top_level.txt

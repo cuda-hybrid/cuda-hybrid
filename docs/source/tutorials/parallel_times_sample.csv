@@ -1,0 +1,5 @@
+Number of Agents,Type,Time (minutes)
+1000,barabasiGreedy,0.191486667
+5000,barabasiGreedy,1.3587
+10000,barabasiGreedy,4.947505556
+40000,barabasiGreedy,88.92053333

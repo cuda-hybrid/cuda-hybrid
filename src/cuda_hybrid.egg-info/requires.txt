@@ -1,0 +1,5 @@
+setuptools>=42
+networkx>=2.6.3
+nptyping>=1.4.4
+numba>=0.48.0
+numpy>=1.21.5
